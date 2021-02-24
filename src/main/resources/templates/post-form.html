@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="create-new-post" method="post">
+    <label for="title">Write your title</label>
+    <input type="text" name="title" id="title">
+
+
+    <p>Visibility</p>
+    <label for="public">Public</label>
+    <input type="radio" name="visibility" id="public" value="public">
+    <label for="private">Private</label>
+    <input type="radio" name="visibility" id="private" value="private">
+
+    <button type="submit">Create new post</button>
+</form>
+</body>
+</html>
