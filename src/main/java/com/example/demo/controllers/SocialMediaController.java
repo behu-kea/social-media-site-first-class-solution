@@ -30,7 +30,6 @@ public class SocialMediaController {
     @GetMapping("/dashboard")
     @ResponseBody
     public ArrayList renderDashboard() {
-        System.out.println(posts.get(0).title+ posts.get(0).visibility);
         ArrayList<Post> publicPosts = new ArrayList<>();
 
         for (Post post : posts) {
